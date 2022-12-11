@@ -12,7 +12,15 @@ specific_heat_capacity_Al2O3 = float(input("Enter the Specific Heat Capacity of 
 specific_heat_capacity_C = float(input("Enter the Specific Heat Capacity of Carbon: "))
 
 def func(x):
-    return (2 * specific_heat_capacity_Al) + (3 * specific_heat_capacity_CO) - (specific_heat_capacity_Al2O3) - (3 * specific_heat_capacity_C)
+    return (2 * specific_heat_capacity_Al) 
+    + (3 * specific_heat_capacity_CO) 
+    - (specific_heat_capacity_Al2O3) 
+    - (3 * specific_heat_capacity_C)
 
-latent_heat = (2 * standard_enthalpy_Al) + (3 * standard_enthalpy_CO) - (standard_enthalpy_Al2O3) - (3 * standard_enthalpy_C) + quad(func, 298, temp)[0]
-print("Latent heat of Aluminium at {} K = {}".format(temp, latent_heat))
+latent_heat = (2 * standard_enthalpy_Al) 
++ (3 * standard_enthalpy_CO) 
+- (standard_enthalpy_Al2O3) 
+- (3 * standard_enthalpy_C) 
++ quad(func, 298, temp)[0]
+
+print("Latent heat of Aluminium at {} K = {:.2f} kJ".format(temp, latent_heat))
