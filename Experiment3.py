@@ -1,9 +1,9 @@
 from scipy.integrate import quad 
 
-standard_enthalpy_Al = float(input("Enter the Standard Enthalpy of Aluminium: "))
-standard_enthalpy_CO = float(input("Enter the Standard Enthalpy of Carbon Monoxide: "))
-standard_enthalpy_Al2O3 = float(input("Enter the Standard Enthalpy of Aluminium Oxide: "))
-standard_enthalpy_C = float(input("Enter the Standard Enthalpy of Carbon: "))
+standard_enthalpy_Al = 1
+standard_enthalpy_CO = 1
+standard_enthalpy_Al2O3 = 1
+standard_enthalpy_C = 1
 
 temp = float(input("Enter the temperature of the reaction: "))
 specific_heat_capacity_Al = float(input("Enter the Specific Heat Capacity of Aluminium: "))
