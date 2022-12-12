@@ -2,8 +2,8 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-temp_values = [300, 450, 600, 750]
-omega_values = [-30000, 0, 30000]
+temp_values = [200, 298, 400, 500]
+omega_values = [15000, 10, 22500]
 
 dictionary1 = {}
 dictionary2 = {}
