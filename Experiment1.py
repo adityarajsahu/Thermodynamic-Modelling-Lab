@@ -22,7 +22,7 @@ for mole_fraction in mole_fractions:
             y = []
 
             for X in np.arange(0.1, 1.1, 0.1):
-                U = dictionary1[mole_fraction] + 8.314 * temp * 2.303 * math.log(X) + omega * ((1 - X) ** 2)
+                U = dictionary1[mole_fraction] + 8.314 * temp * 2.303 * math.log(X) + omega * (1 - (X ** 2))
                 x.append(X)
                 y.append(U)
             plt.plot(x, y, label = str(temp) + 'K', marker = 'o')
