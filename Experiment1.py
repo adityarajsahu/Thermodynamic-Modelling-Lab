@@ -28,6 +28,6 @@ for mole_fraction in mole_fractions:
             plt.plot(x, y, label = str(temp) + 'K', marker = 'o')
             plt.xlabel(mole_fraction)
             plt.ylabel('Chemical Potential of ' + dictionary2[mole_fraction])
-            plt.title('Chemical potential of ' + dictionary2[mole_fraction] + ' vs ' + mole_fraction + ' at omega = ' + str(0))
+            plt.title('Chemical potential of ' + dictionary2[mole_fraction] + ' vs ' + mole_fraction + ' at omega = ' + str(omega))
             plt.legend()
         plt.show()
